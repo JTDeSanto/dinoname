@@ -5,14 +5,37 @@ body {
   background-color: #124d5b;
 }
 
+label {
+  color: white;
+}
+
 .dino {
-  background-color: #ffffff;
-  background-opacity: 0.5;
-  border-radius: 30px;
+  
+  background-image: url('volcano.jpg');
+  background-position: top right;
+  background-size: 500px;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #000;
+  height: 200px;
+  position: relative;
+}
+
+
+
+.dino img {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 
 .dinoname {
   font-size: 8px;
+}
+
+.dino-head {
+  position: absolute;
 }
 
 .main {
@@ -32,6 +55,7 @@ body {
 
 .navbar-brand {
   margin-top: 0px;
+  font-size: 13px;
 }
 
 .title {

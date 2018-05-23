@@ -5,8 +5,9 @@
     <h1 class="main">Dinosaur Name?</h1>
     <h3 class="name"><%= 'dinosaur name here' %></h3>
   </div>
-  <div class="col-3 dino">
-    <%= image_tag 'dinosaur.png', class: 'img-fluid' %>
+  <div class="col-4 dino">
+    
+    <%= image_tag 'dinosaur.png', class: 'img-fluid dino-head' %>
     
   </div>
 
@@ -19,7 +20,7 @@
   <%= simple_form_for Dino.new do |f| %>
         <%= f.input :name, placeholder:"Enter your first name"  %>
         <br />
-        <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        <%= f.submit 'Submit', class: 'btn btn-danger' %>
 
       <% end %>
 </div>
