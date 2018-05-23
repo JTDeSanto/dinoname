@@ -1,4 +1,5 @@
 @import 'bootstrap';
+@import 'font-awesome';
 
 
 body {
@@ -41,6 +42,7 @@ label {
 .main {
   align-content: center;
   color: #F7A81E;
+  font-family: 'intro_rust_gbase_2_line';
 }
 
 .name {
