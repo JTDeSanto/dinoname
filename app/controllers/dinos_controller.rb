@@ -10,7 +10,8 @@ class DinosController < ApplicationController
   end
 
   def create
-    @dino = dinos.create(dino_params)
+    @dino = Dino.create(dino_params)
+    redirect_to root_path
   end
 
 

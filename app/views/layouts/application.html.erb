@@ -9,6 +9,27 @@
   </head>
 
   <body>
+    <nav class="navbar sticky-top navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="float-left" href="#"><%= image_tag 'dinosaur-logo.png', class: 'icon' %></a>
+      <%= link_to 'Dinoname', root_path , class: 'navbar-brand float-right' %>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          
+          <li class="nav-item">
+            <%= link_to new_dino_path, class: 'nav-link' do%>
+            <i class="fa fa-plus-circle"></i>
+            New Dino
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
     <%= yield %>
   </body>
 </html>

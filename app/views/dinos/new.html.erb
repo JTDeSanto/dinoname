@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h1 class="main">Enter A New Dinosaur</h1>
+    </div>
+    <div class="col-4 offset-4">
+
+      <%= simple_form_for @dino do |f| %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.input :diet, as: :radio_buttons, collection: [[0,'Carnivore'], [1, 'Herbivore'], [2, 'Omnivore']], label_method: :second, value_method: :second %>
+
+        <br />
+        <%= f.submit 'Create', class: 'btn btn-primary' %>
+      <% end %>
+
+
+
+  </div>
+</div>
