@@ -1,24 +1,16 @@
 class DinonamesController < ApplicationController
-def index
+  def index
+     
     
-   @dinoname = "#{:name}" + 'saurus'
-    
-  end
-
-  def new
-  
-   
   end
 
   def create
-    
+      @dinoname = Dinoname.new(name_params)
   end
-
-end
 
 private
   def name_params
-    require(:dinoname).permit(:name)
+    params.require(:dinoname).permit(:name)
     
   end
 

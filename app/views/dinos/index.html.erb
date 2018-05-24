@@ -1,27 +1,25 @@
 <br />
 <div class=" row">
-  <div class="col-4 offset-2 title">
+  <div class="col-md-5 offset-md-2 col-sm-12 title">
     <h4 class="main">What is Your</h4>
     <h1 class="main">Dinosaur Name?</h1>
-    <h3 class="name"><%= 'dinosaur name here' %></h3>
-  </div>
-  <div class="col-4 dino">
+    <br />
+    <div class="container">
+      
+     <%= simple_form_for Dinoname.new do |f| %>
+          <%= f.input :name, placeholder:"Enter your first name"  %>
+          <br />
+          <%= f.submit 'Submit', class: 'btn btn-danger' %>
+
+        <% end %>
+      </div>
     
-    <%= image_tag 'dinosaur.png', class: 'img-fluid dino-head' %>
+  </div>
+  <div class="col-md-3 col-sm-12 dino">
+    
+    <%= image_tag 'dinosaur.png', class: '' %>
     
   </div>
 
   
 </div>
-
-<div class="col-4 offset-4">
-  
-    
-  <%= simple_form_for Dino.new do |f| %>
-        <%= f.input :name, placeholder:"Enter your first name"  %>
-        <br />
-        <%= f.submit 'Submit', class: 'btn btn-danger' %>
-
-      <% end %>
-</div>
-
