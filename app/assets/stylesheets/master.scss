@@ -10,6 +10,30 @@ label {
   color: white;
 }
 
+table {
+  border: 2px solid ;
+  margin-top: 10px ;
+}
+
+th {
+  background: #d9534f;
+  color: white;
+  padding: 3px 3px;
+  font-weight: 100;
+}
+
+tr {
+  
+  border: 1px solid black;
+}
+
+td {
+  padding: 5px 10px 5px 10px;
+  margin: 5px 5px 5px 5px;
+  border: 1px solid black;
+  align-items: center;
+}
+
 .dino {
   
   background-image: url('dino-volcano.jpg');
@@ -43,12 +67,25 @@ label {
 }
 
 
+.icon {
+  height: 35px;
+  width: auto;
+  margin-bottom: 0px;
+}
+
+.icon a:hover{
+  text-decoration: none;
+}
+
+.keep {
+  margin-right: 5px;
+}
 
 .main {
   align-content: center;
   color: #F7A81E;
   font-family: 'intro_rust_gbase_2_line', helvetica, sans-serif;
-  text-shadow: 1px 1px 2px #00f; 
+  text-shadow: 1px 1px 2px #000; 
 }
 
 .name {
@@ -61,13 +98,9 @@ label {
 
 .nav-item a:hover{
   color: #F7A81E;
+
 }
 
-.icon {
-  height: 35px;
-  width: auto;
-  margin-bottom: 0px;
-}
 
 .navbar-brand {
   margin-top: 0px;
@@ -80,9 +113,19 @@ label {
   text-align: center;
 }
 
-.try-again {
-  border: 1px solid white;
-  opacity: 0.7;
+.btn-group-lrg {
+  
+  display: inline;
+  /* opacity: 0.7; */
+}
+
+.btn-group-lrg > .btn  {
+  height: 45px;
+}
+
+.top-dinos{
+  text-transform: uppercase;
+  color: #F7A81E;
 }
 
 .yourDinoname {

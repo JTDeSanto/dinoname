@@ -14,7 +14,7 @@
 
     <div class="container">
       
-      <%= simple_form_for Dinoname.new do |f| %>
+      <%= simple_form_for Dinoname.new, method: :get do |f| %>
         <%= f.input :name, placeholder:"Enter your first name"  %>
         <br />
         <%= f.submit 'Submit', class: 'btn btn-danger' %>
@@ -25,4 +25,25 @@
   </div>
 
   
+</div>
+<br />
+<br />
+
+<div class="col-6 offset-3 text-center">
+  <h1 class="main"> ++ Top Dino-Names ++</h1> 
+  
+    <table>
+      <thead><th>Name</th><th>Diet</th><th>Rank</th></thead>
+      <tbody>
+      <% @dinos.each do |d| %>
+        <tr class="top-dinos text-center">
+          <td><h3><%= d.name %></h3></td> <td><h4><%= d.diet %></h4></td> <td><h4><%= d.id %></h4></td>
+          </tr>
+        <% end %>
+        </tbody>
+    </table>
+  
+
+    <br />
+    <br />
 </div>

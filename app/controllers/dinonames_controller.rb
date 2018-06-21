@@ -1,6 +1,6 @@
 class DinonamesController < ApplicationController
   def index
-     
+     @dinoname = Dinoname.new(name_params)
     
   end
 

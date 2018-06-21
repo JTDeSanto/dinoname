@@ -4,31 +4,39 @@ class Dinoname
 
 
   def formatted_name
+      @_formatted_name ||= generate_name
+  end
+
+  private
+
+  def generate_name
     if self.name.present?
       @first_name = self.name
       @last_name = suffix
-      if /[aeiou]/.match(@first_name.last) && /[aeiou]/.match(@last_name[0])
+      
+      # if first and last names end with vowel and 
+      if /[aeiou]/ =~ @first_name.last  && /[aeiou]/ =~ @last_name[0]
         @first_name = @first_name.chomp(@first_name.last)
 
       elsif  /[aeiou]/.match(@first_name.last) == nil && /[aeiou]/.match( @last_name[0])== nil
          @last_name = 'a' + @last_name
       end
-    
-    "#{@first_name}#{@last_name}"
+      @full_dino_name = @first_name + @last_name
+
+    "#{@full_dino_name}"
+    #{@first_name}#{@last_name}"
     
     else
       "Iforgotmyname-#{suffix}"
     end
+    
   end
-
-  private
-
   
   def suffix
-    endings = ["saurus","ceratops","dactyl","adon", "alophus","opteryx", "ophodon", "saurus rex", "cephalasaurus" ]
-      @y = endings.length - 1
-      return "#{endings[rand(0..@y)] }"
+    endings = ["saurus","ceratops","dactyl","adon", "sauralophus","opteryx", "lophodon", "saurus rex", "cephalasaurus" ]
+       "#{endings[rand(0.. endings.length - 1)] }"
         
     end
+
   
 end
