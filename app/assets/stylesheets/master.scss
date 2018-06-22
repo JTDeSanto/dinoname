@@ -1,9 +1,20 @@
 @import 'bootstrap';
 @import 'font-awesome';
 
+a {
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
 
 body {
   background-color: #124d5b;
+}
+
+i {
+  color: #F7A81E;
 }
 
 label {
@@ -11,33 +22,28 @@ label {
 }
 
 table {
-  border: 2px solid ;
   margin-top: 10px ;
 }
+
 
 th {
   background: #d9534f;
   color: white;
   padding: 3px 3px;
   font-weight: 100;
-}
-
-tr {
   
-  border: 1px solid black;
 }
 
 td {
-  padding: 5px 10px 5px 10px;
-  margin: 5px 5px 5px 5px;
-  border: 1px solid black;
+  padding: 2px 5px 2px 5px;
+  
   align-items: center;
 }
 
 .dino {
   
   background-image: url('dino-volcano.jpg');
-  background-position: center right; 
+  background-position: top right; 
   background-size: cover;
   background-attachment: local;
   background-repeat: no-repeat;
@@ -73,16 +79,16 @@ td {
   margin-bottom: 0px;
 }
 
-.icon a:hover{
-  text-decoration: none;
-}
+
+
+
 
 .keep {
   margin-right: 5px;
 }
 
 .main {
-  align-content: center;
+  
   color: #F7A81E;
   font-family: 'intro_rust_gbase_2_line', helvetica, sans-serif;
   text-shadow: 1px 1px 2px #000; 
@@ -117,15 +123,18 @@ td {
   
   display: inline;
   /* opacity: 0.7; */
+  ;
 }
 
 .btn-group-lrg > .btn  {
   height: 45px;
+  box-shadow: 1px 1px 4px #000;
 }
 
 .top-dinos{
   text-transform: uppercase;
   color: #F7A81E;
+
 }
 
 .yourDinoname {

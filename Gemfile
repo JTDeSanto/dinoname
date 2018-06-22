@@ -56,6 +56,8 @@ gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'simple_form'
 gem 'font-awesome-rails'
+gem 'acts_as_votable', '~> 0.11.1'
+gem 'devise'
 
 gem 'rails_12factor', group: :production
 
