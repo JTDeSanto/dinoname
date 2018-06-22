@@ -40,14 +40,9 @@
       <% @dinos.each do |d| %>
         <tr class="top-dinos text-center">
           <td><h4><%= d.name %></h4></td> <td><h5><%= d.diet %></h5></td> <td>
-            <% if user_signed_in? %>
-            <%= link_to like_dino_path(d), method: :put do %>
             
-            <%= alert %>
-
-            <i class="fa fa-thumbs-up"></i></td><td><%= d.get_upvotes.size %><% end %>
-   <% end %>
-            </td>
+            <%= link_to like_dino_path(d), method: :put do %><i class="fa fa-thumbs-up"></i></td><td><%= d.get_upvotes.size %>
+<% end %></td>
           </tr>
         <% end %>
         </tbody>
