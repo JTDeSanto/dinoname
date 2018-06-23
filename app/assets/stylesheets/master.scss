@@ -23,8 +23,13 @@ label {
 
 table {
   margin-top: 10px ;
+  
+
 }
 
+tbody {
+  counter-reset: rowNumber;
+}
 
 th {
   background: #d9534f;
@@ -38,6 +43,18 @@ td {
   padding: 2px 5px 2px 5px;
   
   align-items: center;
+}
+
+    
+
+tbody tr {
+    counter-increment: rowNumber;
+}
+
+tbody tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
 }
 
 .dino {

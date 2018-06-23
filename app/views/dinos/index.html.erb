@@ -35,16 +35,20 @@
   
   
     <table class="table table-dark  table-hover">
-      <thead ><th>Name</th><th>Diet</th><th>Vote</th><th>Count</th></thead>
+      <thead ><th>Rank</th><th>Name</th><th>Diet</th><th>Vote</th><th>Count</th></thead>
       <tbody>
-      <% @dinos.each do |d| %>
+        
+      <% @dinos.order(:cached_votes_up => :desc).each do |d| %>
+      
         <tr class="top-dinos text-center">
-          <td><h4><%= d.name %></h4></td> <td><h5><%= d.diet %></h5></td> <td>
-            
+          <td></td><td><h4><%= d.name %></h4></td> <td><h5><%= d.diet %></h5></td> <td>
+
             <%= link_to like_dino_path(d), method: :put do %><i class="fa fa-thumbs-up"></i></td><td><%= d.get_upvotes.size %>
 <% end %></td>
           </tr>
+
         <% end %>
+         
         </tbody>
     </table>
   
