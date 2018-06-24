@@ -5,7 +5,7 @@
 <h1 class="main dino-name"><%= @dinoname.formatted_name %></h1>
 <br />
 <br />
-  <div class="col-6 offset-3">
+  <div class="col-6 offset-3 col-xs-12">
     <%= simple_form_for Dino.new(name: @dinoname.formatted_name) do |f| %>
       <%= f.input :name, as: :hidden %>  
       <%= f.input :diet, as: :radio_buttons, collection: [[0,'Carnivore'], [1, 'Herbivore'], [2, 'Omnivore']], label_method: :second, value_method: :second %>

@@ -23,8 +23,6 @@ label {
 
 table {
   margin-top: 10px ;
-  
-
 }
 
 tbody {
@@ -33,19 +31,15 @@ tbody {
 
 th {
   background: #d9534f;
-  color: white;
-  padding: 3px 3px;
+  color: white; 
   font-weight: 100;
+  align-items: center;
   
 }
 
 td {
-  padding: 2px 5px 2px 5px;
-  
-  align-items: center;
+  padding: 2px 2px 2px 2px;  
 }
-
-    
 
 tbody tr {
     counter-increment: rowNumber;
@@ -57,8 +51,7 @@ tbody tr td:first-child::before {
     margin-right: 0.5em;
 }
 
-.dino {
-  
+.dino {  
   background-image: url('dino-volcano.jpg');
   background-position: top right; 
   background-size: cover;
@@ -73,39 +66,32 @@ tbody tr td:first-child::before {
   flex-direction: column;
 }
 
-
-
 .dino img {
-  /* position: absolute; */
-  /* bottom: 0; */
   right: 10px;
   width: 100%;
   margin-top: auto;
   display: flex;
 }
 
-
 .dino-name {
   font-size: 58px;
 }
 
-
 .icon {
-  height: 35px;
-  width: auto;
-  margin-bottom: 0px;
+  height: 40px;
+  width: auto;  
 }
 
-
-
-
+.btn >.icon   {
+  height: 30px;
+  width: auto; 
+}
 
 .keep {
   margin-right: 5px;
 }
 
 .main {
-  
   color: #F7A81E;
   font-family: 'intro_rust_gbase_2_line', helvetica, sans-serif;
   text-shadow: 1px 1px 2px #000; 
@@ -121,9 +107,7 @@ tbody tr td:first-child::before {
 
 .nav-item a:hover{
   color: #F7A81E;
-
 }
-
 
 .navbar-brand {
   margin-top: 0px;
@@ -137,9 +121,7 @@ tbody tr td:first-child::before {
 }
 
 .btn-group-lrg {
-  
   display: inline;
-  /* opacity: 0.7; */
   ;
 }
 
@@ -151,13 +133,10 @@ tbody tr td:first-child::before {
 .top-dinos{
   text-transform: uppercase;
   color: #F7A81E;
-
 }
 
 .yourDinoname {
-  
   background-image: url('volcano-big.jpg');
-  /* background-position: top right; */
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
